@@ -2,7 +2,7 @@
 var user;
 
 $( document ).ready(function() {
-	$("#welcome").hide();
+	$("#welcomeText").hide();
 });
 
   function signIn() {
