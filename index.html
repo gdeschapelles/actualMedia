@@ -1,0 +1,137 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ProveMeWrong.com</title>
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="jumbotron.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="1">ProveMeWrong.com</a>
+          <a class="navbar-brand" href="3">Friends</a>
+          <a class="navbar-brand" href="4">Active Debates</a>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <button type="button" class="btn btn-primary" onclick="signIn();"><i class="fa fa-google-plus"></i>Sign In With Google</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Welcome to ProveMeWrong!</h1>
+        <p>This is a website where you can have intellectual arguements with others about politics and current events.  Remember to be polite and read up before you enter an arguement.  Have fun!</p>
+
+        <input type="image" id="cnn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cnn.svg/2000px-Cnn.svg.png" alt="cnn1" style="width:50px;height50px"/> 
+
+        <input type="image" id="nytimes" src="http://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png" alt="nytimes1" style="width:50px;height50px"/>
+
+         <input type="image" id="bbc" src="https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/0023/3343/brand.gif?itok=BLysmm0G" alt="nytimes1" style="width:50px;height50px"/>
+
+         <input type="image" id="economist" src="https://lh3.googleusercontent.com/j0rfLNcDw7hmSdKKXH88JA6tG6WKANNPIg1_9prDyLL2nLEUESd47CfTmyH1JLpTxxoD=w300" alt="nytimes1" style="width:50px;height50px"/>
+
+         <input type="image" id="wsj" src="http://s.wsj.net/blogs/img/WSJ_Logo_BlackBackground_1200x630social" alt="nytimes1" style="width:50px;height50px"/>
+
+         <input type="image" id="fox" src="http://granitegrok.com/wp-content/uploads/2013/01/fox-news-logo.jpg" alt="nytimes1" style="width:50px;height50px"/>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <h2>US Social Issues</h2>
+          <p><a class="btn btn-default" id="debateButton1" href="subArticle1" role="button">Debate! &raquo;</a></p>
+
+        </div>
+        <div class="col-md-4">
+          <h2>World Relations</h2>
+
+          <p><a class="btn btn-default" href="subArticle2" role="button">Debate! &raquo;</a></p>
+
+       </div>
+        <div class="col-md-4">
+          <h2> US Bugdet Spending</h2>
+
+          <p><a class="btn btn-default" href="subArticle3" role="button">Debate! &raquo;</a></p>
+
+        </div>
+         <div class="col-md-4">
+         <h2>Europe</h2>
+
+         <p><a class="btn btn-default" href="subArticle3" role="button">Debate! &raquo;</a></p>
+
+        </div>
+         <div class="col-md-4">
+         <h2>EU</h2>
+
+         <p><a class="btn btn-default" href="subArticle3" role="button">Debate! &raquo;</a></p>
+
+        </div>
+         <div class="col-md-4">
+         <h2>Ideology</h2>
+
+         <p><a class="btn btn-default" href="subArticle3" role="button">Debate! &raquo;</a></p>
+
+        </div>
+      </div>
+
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+
+     <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDmk-1B-QrxMd4U09kGdE3iF3PCbTynUZA",
+    authDomain: "socialmedia-b5ee7.firebaseapp.com",
+    databaseURL: "https://socialmedia-b5ee7.firebaseio.com",
+    projectId: "socialmedia-b5ee7",
+    storageBucket: "socialmedia-b5ee7.appspot.com",
+    messagingSenderId: "501366805519"
+  };
+
+  firebase.initializeApp(config);
+  </script>
+ <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script>
+
+</script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="myjs.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  </body>
+</html>
